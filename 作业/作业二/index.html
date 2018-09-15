@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!--引入外部css代码-->
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+		<!--引入外部js代码-->
+		<script type="text/javascript" src="js/index.js"></script>
+		<!--填写个人信息-->
+		<form>
+		<!--基本信息-->
+		<h3>请填写个人信息</h3>
+		<fieldset id="file">
+			<legend id="legend">基本信息</legend>
+			姓&nbsp;&nbsp;名&nbsp;<input type="text" autofocus="autofocus" required="required" name="name1">
+			<span id="span">*</span>
+			</br>
+			年&nbsp;&nbsp;龄&nbsp;<input type="number">
+		</fieldset>
+		<!--邮箱-->
+		<!--<fieldset id="file">
+			<legend id="legend">你想在哪里收到邮件？</legend>
+			邮&nbsp;&nbsp;箱&nbsp;<input type="serach" name="email" placeholder="请输入邮箱" id="emails" autocomplete="on" list="eem" result onkeyup="foo()"/>
+			<datalist id="eem" >
+				<option id='0'>@qq.com</option>
+				<option id='1'>@163.com</option>
+				<option id='2'>@gmail.com</option>
+				<option id='3'>@yahoo.com</option>
+				<option id='4'>@126.com</option>
+			</datalist>
+			<span id="span">*</span>
+		</fieldset>-->
+		<fieldset id="file">
+			<legend id="legend">你想在哪里收到邮件？</legend>
+			邮&nbsp;&nbsp;箱&nbsp;<input type="text" name="email" id="email" autocpmplete="off" onkeyup="match_mail(this.value)" required="required" >
+			<div id="match_email"></div>
+			<span id="span">*</span>
+		</fieldset>
+		<!--收入情况-->
+		<fieldset id="file">
+			<legend id="legend">收入情况</legend>
+			月&nbsp;收&nbsp;入&nbsp;<input type="text" list="money" placeholder="20k+" >
+			<datalist id="money">
+				<option>30k+</option>
+				<option>40k+</option>
+				<option>50k+</option>
+				<option>60k+</option>
+				<option>70k+</option>
+			</datalist>
+			</br>
+			银&nbsp;行&nbsp;卡&nbsp;<input type="number" name="name2">&nbsp;
+			有&nbsp;效&nbsp;期&nbsp;<input type="date" name="date">
+		</fieldset> 
+		<!--提交文件-->
+		<fieldset id="file">
+			<legend id="legend">选取提交文件</legend>
+			<div id="div">文&nbsp;件&nbsp;<input type="submit" multiple="multiple" value="上传文件">&nbsp;未选择任何文件<div>
+		</fieldset>
+		</br>
+		<input type="submit" value="提交">
+		</form>
+		
+	</body>
+</html>
