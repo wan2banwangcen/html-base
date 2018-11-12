@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>响应式网页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style type="text/css">
+			.navbar{
+				margin:0px;
+			}
+			#body{
+				margin-left: 20px;
+			}
+			.footer{
+				width:100%;
+				background-color: #222;
+				height:40px;
+				border-radius: 3px;
+			}
+			.ditu{
+				color:white;
+				float: left;
+				margin-left:10px;
+			}
+			.dingbu{
+				color:darkblue;
+				float: right;
+				margin-right: 10px;
+			}
+			.cop{
+				color:white;
+				float: left;
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+	<!--导航条-->
+	<div>
+    	<p></p>
+		<nav class="navbar navbar-inverse"> 
+			<div class="container-fluid">
+			  	<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-1">
+				      <span class="sr-only">导航开关</span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				    </button>
+			    	<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-star"></span>Brand</a>
+			  	</div>
+				<div class="collapse navbar-collapse" id="bs-1">
+				    <ul class="nav navbar-nav">
+				      <li class="active"><a href="#">Link</a></li>
+				      <li><a href="#">Link1</a></li>
+				      <li><a href="#">Link2</a></li>
+				      <li><a href="#">Link3</a></li>
+				      <li><a href="#">Link4</a></li>    
+				    </ul>   
+				 </div>
+			 </div>
+		</nav> 
+	</div>
+	<!--轮播图-->
+		<div id="generic" class="carousel slide" data-ride="carousel">
+  		<!-- 轮播（Carousel）指示标 -->
+    		<ol class="carousel-indicators">
+      		<li data-target="#generic" data-slide-to="0" class="active"></li>
+      		<li data-target="#generic" data-slide-to="1"></li>
+      		<li data-target="#generic" data-slide-to="2"></li>
+    		</ol>
+     	<!-- 轮播（Carousel）项目 -->
+    		<div class="carousel-inner" >
+      			<div class="item active">
+        			<img alt="First slide" src="img/banner1.jpg" >
+		    		<div class="carousel-caption">
+		    			<h3>轮播图1</h3>
+          				<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        			</div>
+      			</div>
+      			<div class="item">
+        			<img alt="Second slide" src="img/banner2.jpg" >
+        			<div class="carousel-caption">
+          				<h3>轮播图2</h3>
+          				<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+       				</div>
+      			</div>
+      			<div class="item">
+       				<img alt="Third slide" src="img/banner3.jpg"  >
+		  			<div class="carousel-caption">
+          				<h3>轮播图3</h3>
+          				<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        			</div>
+     	 		</div>
+    		</div>
+	    <!-- 轮播（Carousel）导航 -->
+	    	<a class="left carousel-control" href="#generic" data-slide="prev">
+	      		<span class="glyphicon glyphicon-chevron-left"></span>
+	    	</a>
+	    	<a class="right carousel-control" href="#generic" data-slide="next">
+	      		<span class="glyphicon glyphicon-chevron-right"></span>
+	    	</a>
+  		</div>
+  	<!--content area-->
+  	<div class="container" id="content">
+  		<div class="row">
+  			<div class="col-md-4">
+  				<h3>Content area&nbsp;<small>the first</small></h3>
+  				<p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.
+  					Quickly prototype your ideas or build your entire app with our Sass variables and mixins, 
+  					responsive grid system, extensive prebuilt components, 
+  					and powerful plugins built on jQuery.
+  				</p>
+  			</div>
+  			<div class="col-md-4">
+  				<h3>Content area&nbsp;<small>the second</small></h3>
+  				<p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.
+  					Quickly prototype your ideas or build your entire app with our Sass variables and mixins, 
+  					responsive grid system, extensive prebuilt components, 
+  					and powerful plugins built on jQuery.
+  				</p>
+  			</div>
+  			<div class="col-md-4">
+  				<h3>Content area&nbsp;<small>the third</small></h3>
+  				<p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.
+  					Quickly prototype your ideas or build your entire app with our Sass variables and mixins, 
+  					responsive grid system, extensive prebuilt components, 
+  					and powerful plugins built on jQuery.
+  				</p>
+  			</div>
+  		</div>
+  	</div>
+  	<!--表格-->
+  	<div class="container">
+  		<h3>Report&nbsp;Table&nbsp;<small>Form&nbsp;Detail</small></h3>
+  		<table class="table table-striped">
+  			<thead>
+				<tr>
+					<th>#</th>
+					<th>first</th>
+					<th>second</th>
+					<th>third</th>
+					<th>forth</th>
+					<th>fifth</th>
+				</tr>
+			</thead>
+  			<tr>
+  				<td>1</td>
+  				<td>pentngus&nbsp;magin </td>
+  				<td>what</td>
+  				<td>message</td>
+  				<td>56</td>
+  				<td><button type="button" class="btn btn-success">提交</button></td>
+  			</tr>
+  			<tr>
+  				<td>1</td>
+  				<td>pentngus&nbsp;magin </td>
+  				<td>what</td>
+  				<td>message</td>
+  				<td>56</td>
+  				<td><button type="button" class="btn btn-success">提交</button></td>
+  			</tr>
+  			<tr>
+  				<td>1</td>
+  				<td>pentngus&nbsp;magin </td>
+  				<td>you</td>
+  				<td>message</td>
+  				<td>44</td>
+  				<td><button type="button" class="btn btn-success">提交</button></td>
+  			</tr>
+  			<tr>
+  				<td>1</td>
+  				<td>pentngus&nbsp;magin </td>
+  				<td>test</td>
+  				<td>message</td>
+  				<td>32</td>
+  				<td><button type="button" class="btn btn-success">提交</button></td>
+  			</tr>
+  		</table>
+  	</div>
+  	<!--image-->
+  	<div class="container">
+  		<div class="media-left">	
+			<img class="media-object " src="img/pic.jpg" height="230px" width="530" alt="...">
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">Cum&nbsp;sociis&nbsp;natoque&nbsp;et&nbsp;magnis&nbsp;dis&nbsp;parturient&nbsp;montes</h4>
+			<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+			<div class="row">
+				<div class="col-md-6">
+					<ul style="list-style: none;">
+						<li>messages&nbsp;det&nbsp;diem&nbsp;risus</li>
+						<li>messages&nbsp;det&nbsp;diem&nbsp;risus</li>
+						<li>messages&nbsp;det&nbsp;diem&nbsp;risus</li>
+						<li>messages&nbsp;det&nbsp;diem&nbsp;risus</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<img src="img/1.jpg" style="height:100px"/>
+				</div>			
+			</div>
+		</div> 
+  	</div>
+  	<!--images show-->
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-7">
+  				<h3>Images&nbsp;Show&nbsp;<small>images</small></h3>
+  				<div class="row">
+  					<div class="col-md-4">
+  						<img src="img/2.jpg" height="120px" width = "185px" class="img-rounded"/>
+  					</div>
+  					<div class="col-md-4">
+  						<img src="img/3.jpg" height="120px" width = "185px" class="img-rounded"/>
+  					</div>
+  					<div class="col-md-4">
+  						<img src="img/4.jpg" height="120px" width = "185px" class="img-rounded"/>
+  					</div>
+  					<div class="col-md-12">
+  						<p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col-md-5">
+  				<h3>User&nbsp;Login&nbsp;<small>from</small></h3>
+  				<form class="form-horizontal" >
+			  		<div class="form-group">
+			    		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+			    		<div class="col-sm-10">
+			      			<input type="email" class="form-control col-sm-10" id="inputEmail3" placeholder="Email">
+			    		</div>
+			  		</div>
+			  		<div class="form-group">
+			    		<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+			    		<div class="col-sm-10">
+			      			<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+			    		</div>
+			  		</div>
+			  		<div class="form-group">
+			    		<div class="col-sm-offset-2 col-sm-10">
+			      			<div class="checkbox">
+			        			<label>
+			          				<input type="checkbox">blue
+			        			</label>
+			        			<label>
+			          				<input type="checkbox">red
+			        			</label>
+			      			</div>
+			    		</div>
+			  		</div>
+			  		<div class="form-group">
+			    		<div class="col-sm-offset-2 col-sm-10">
+			      			<button type="submit" class="btn btn-default" style="background:#5bc0de">Sign in</button>
+			    		</div>
+			  		</div>
+				</form>
+  			</div>
+  		</div>
+  	</div>
+  	<!--footer-->
+  	<div class="footer">
+  		<span class="ditu">网站地图</span>
+  		<span class="dingbu">回到顶部</span>
+  		</br>
+  		<span class="cop">copright@www.xxx.com</span>
+  	</div>
+	</body>
+	<script src="js/jquery.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+</html>
